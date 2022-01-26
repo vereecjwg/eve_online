@@ -20,6 +20,7 @@ module EveOnline
   module ESI
     autoload :Base, "eve_online/esi/base"
     
+    autoload :RegionOrders, "eve_online/esi/region_orders"
     autoload :UniverseStructuresStructure, "eve_online/esi/universe_structures_structure"
     autoload :MarketStructures, "eve_online/esi/market_structures"
 
