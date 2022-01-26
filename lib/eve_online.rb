@@ -20,6 +20,7 @@ module EveOnline
   module ESI
     autoload :Base, "eve_online/esi/base"
     
+    autoload :UniverseStructuresStructure, "eve_online/esi/universe_structures_structure"
     autoload :MarketStructures, "eve_online/esi/market_structures"
 
     autoload :Alliances, "eve_online/esi/alliances"
@@ -145,6 +146,7 @@ module EveOnline
     module Models
       autoload :Base, "eve_online/esi/models/base"
 
+      autoload :Structure, "eve_online/esi/models/structure"
       autoload :MarketOrder, "eve_online/esi/models/market_order"
       autoload :Position, "eve_online/esi/models/position"
       autoload :Coordinates, "eve_online/esi/models/coordinates"
