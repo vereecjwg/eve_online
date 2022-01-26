@@ -10,15 +10,8 @@ module EveOnline
         @structure_id = options.fetch(:structure_id)
       end
 
-      def structures
-       @assets ||=
-          begin
-            output = []
-            response.each do |asset|
-              output << Models::Structure.new(asset)
-            end
-            output
-          end
+      def structure
+       @structure ||= Models::Structure.new(response)
       end
 
       def scope
