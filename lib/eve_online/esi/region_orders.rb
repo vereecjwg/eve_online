@@ -1,6 +1,6 @@
 module EveOnline
   module ESI
-    class MarketStructures < Base
+    class RegionOrders < Base
       API_PATH = "/v1/markets/%<region_id>s/orders/"
 
       attr_reader :region_id, :page
