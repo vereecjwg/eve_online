@@ -19,6 +19,8 @@ require "eve_online/exceptions/error_limited"
 module EveOnline
   module ESI
     autoload :Base, "eve_online/esi/base"
+    
+    autoload :MarketStructures, "eve_online/esi/market_structures"
 
     autoload :Alliances, "eve_online/esi/alliances"
     autoload :Alliance, "eve_online/esi/alliance"
@@ -143,6 +145,7 @@ module EveOnline
     module Models
       autoload :Base, "eve_online/esi/models/base"
 
+      autoload :MarketOrder, "eve_online/esi/models/market_orders"
       autoload :Position, "eve_online/esi/models/position"
       autoload :Coordinates, "eve_online/esi/models/coordinates"
       autoload :LoyaltyPoint, "eve_online/esi/models/loyalty_point"
