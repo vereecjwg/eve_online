@@ -145,7 +145,7 @@ module EveOnline
     module Models
       autoload :Base, "eve_online/esi/models/base"
 
-      autoload :MarketOrder, "eve_online/esi/models/market_orders"
+      autoload :MarketOrder, "eve_online/esi/models/market_order"
       autoload :Position, "eve_online/esi/models/position"
       autoload :Coordinates, "eve_online/esi/models/coordinates"
       autoload :LoyaltyPoint, "eve_online/esi/models/loyalty_point"
