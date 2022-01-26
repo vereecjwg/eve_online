@@ -31,7 +31,7 @@ module EveOnline
       end
 
       def path
-        API_PATH
+        format(API_PATH, structure_id: structure_id)
       end
     end
   end
