@@ -1,7 +1,7 @@
 module EveOnline
   module ESI
     class MarketStructures < Base
-      API_PATH = "/v1/markets/structures/%<structure_id>s"
+      API_PATH = "/v1/markets/structures/%<structure_id>s/"
 
       attr_reader :structure_id, :page
 
