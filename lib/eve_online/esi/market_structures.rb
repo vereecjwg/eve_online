@@ -12,10 +12,22 @@ module EveOnline
       end
 
       def structure_ids
-        response
+       @assets ||=
+          begin
+            output = []
+            response.each do |asset|
+              output << Models::MarketOrder.new(asset)
+            end
+            output
+          end
       end
 
       def scope
+        "esi-markets.structure_markets.v1"
+      end
+
+      def additional_query_params
+        [:page]
       end
 
       def path
