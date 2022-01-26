@@ -19,8 +19,8 @@ module EveOnline
           options["owner_id"]
         end
 
-        def item_id
-          options["item_id"]
+        def type_id
+          options["type_id"]
         end
 
         def solar_system_id
