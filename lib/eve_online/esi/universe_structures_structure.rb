@@ -22,7 +22,7 @@ module EveOnline
       end
 
       def scope
-        "read_structures"
+        "esi-universe.read_structures.v1"
       end
 
       def path
