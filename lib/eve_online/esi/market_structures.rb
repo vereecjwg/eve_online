@@ -18,10 +18,6 @@ module EveOnline
       def scope
       end
 
-      def additional_query_params
-        [:filter]
-      end
-
       def path
         API_PATH
       end
