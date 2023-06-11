@@ -16,6 +16,7 @@ module EveOnline
 
       # TODO: implement
       def as_json
+        return response
         {}
       end
 
